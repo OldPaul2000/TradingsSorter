@@ -1,0 +1,40 @@
+#sortTradesButton {
+   -fx-background-color: "1EBEA2";
+}
+
+#sortTradesButton:hover {
+   -fx-background-radius: 15, 15, 15, 15;
+}
+
+#sortTradesButton:armed {
+    -fx-background-color: "106C5C";
+}
+#fileIsEmptyWarning {
+         -fx-text-fill: "red";
+         -fx-font-style: oblique;
+         -fx-font-weight: bold;
+}
+
+TextField {
+      -fx-background-radius: 10, 10, 10, 10;
+      -fx-background-color: "02FFAB";
+}
+
+ComboBox {
+    -fx-background-radius: 10, 10, 10, 10;
+    -fx-background-color: "2B88DD";
+}
+.combo-box-base{
+    -fx-background-color: "82E2F6";
+}
+.list-view{
+     -fx-background-color: "BFF1EC";
+     -fx-background-radius: 10, 10, 10, 10;
+}
+.list-cell{
+    -fx-background-color: "82E2F6";
+    -fx-background-radius: 10, 10, 10, 10;
+}
+.list-cell:hover{
+    -fx-background-color: "6BBACA";
+}

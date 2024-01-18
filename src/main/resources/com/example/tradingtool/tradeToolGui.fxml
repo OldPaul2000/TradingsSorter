@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tradingtool.MainController">
+   <children>
+      <Button fx:id="sortTradesButton" layoutX="273.0" layoutY="27.0" mnemonicParsing="false" onAction="#sortTrades" text="Sorteaza" />
+      <Label layoutX="110.0" layoutY="100.0" text="Pierderi &lt; -100 dolari(inainte de ora 15)" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="178.0" text="Pierderi/Castiguri intre -100 si 100 dolari(inainte de ora 15)" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="246.0" text="Pierderi &lt; -100 dolari(dupa ora 15)" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="286.0" text="Castiguri &gt; 100 dolari(dupa ora 15)" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="139.0" text="Castiguri &gt; 100 dolari(inainte de ora 15)" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="326.0" text="Pierderi/Castiguri intre -100 si 100 dolari(dupa ora 15)" textFill="#ffa50a" />
+      <TextField fx:id="losesBefore15" layoutX="435.0" layoutY="96.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="winsBefore15" layoutX="435.0" layoutY="135.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="losesAndWinsBefore15" layoutX="435.0" layoutY="175.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="losesAfter15" layoutX="435.0" layoutY="242.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="winsAfter15" layoutX="435.0" layoutY="282.0" prefHeight="26.0" prefWidth="90.0" />
+      <TextField fx:id="losesAndWinsAfter15" layoutX="435.0" layoutY="322.0" prefHeight="26.0" prefWidth="90.0" />
+      <Label fx:id="fileIsEmptyWarning" layoutX="205.0" layoutY="60.0" textFill="#dc2020">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="inputTradesComboBox" layoutX="435.0" layoutY="380.0" onAction="#setInputTradesFileName" prefHeight="26.0" prefWidth="150.0" />
+      <ComboBox fx:id="before15ComboBox" layoutX="435.0" layoutY="430.0" onAction="#setBefore15TradesFileName" prefWidth="150.0" />
+      <ComboBox fx:id="after15ComboBox" layoutX="435.0" layoutY="480.0" onAction="#setAfter15TradesFileName" prefWidth="150.0" />
+      <Label layoutX="110.0" layoutY="384.0" text="Fisier trade-uri nesortate" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="434.0" text="Fisier trade-uri &lt; ora 15" textFill="#ffa50a" />
+      <Label layoutX="110.0" layoutY="484.0" text="Fisier trade-uri &gt; ora 15" textFill="#ffa50a" />
+   </children>
+</AnchorPane>
